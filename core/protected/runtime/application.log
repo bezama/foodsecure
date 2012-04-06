@@ -1,0 +1,56 @@
+2012/04/06 19:16:26 [error] [exception.CDbException] SQLSTATE[HY000] [14] unable to open database file
+2012/04/06 19:16:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in C:\UwAmp\www\foodsecure\framework\db\CDbConnection.php:388
+Stack trace:
+#0 C:\UwAmp\www\foodsecure\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\UwAmp\www\foodsecure\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\UwAmp\www\foodsecure\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\UwAmp\www\foodsecure\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\UwAmp\www\foodsecure\framework\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 C:\UwAmp\www\foodsecure\framework\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 C:\UwAmp\www\foodsecure\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Post))
+#7 C:\UwAmp\www\foodsecure\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Post')
+#8 C:\UwAmp\www\foodsecure\core\protected\controllers\PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 C:\UwAmp\www\foodsecure\framework\web\actions\CInlineAction.php(50): PostController->actionIndex()
+#10 C:\UwAmp\www\foodsecure\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\UwAmp\www\foodsecure\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\UwAmp\www\foodsecure\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\UwAmp\www\foodsecure\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\UwAmp\www\foodsecure\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\UwAmp\www\foodsecure\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\UwAmp\www\foodsecure\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\UwAmp\www\foodsecure\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\UwAmp\www\foodsecure\framework\web\CWebApplication.php(276): CController->run('')
+#19 C:\UwAmp\www\foodsecure\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#20 C:\UwAmp\www\foodsecure\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\UwAmp\www\foodsecure\index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/foodsecure/
+---
+2012/04/06 19:23:38 [error] [exception.CDbException] could not find driver
+2012/04/06 19:23:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in C:\UwAmp\www\foodsecure\framework\db\CDbConnection.php:388
+Stack trace:
+#0 C:\UwAmp\www\foodsecure\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\UwAmp\www\foodsecure\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\UwAmp\www\foodsecure\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\UwAmp\www\foodsecure\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\UwAmp\www\foodsecure\framework\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 C:\UwAmp\www\foodsecure\framework\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 C:\UwAmp\www\foodsecure\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Post))
+#7 C:\UwAmp\www\foodsecure\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Post')
+#8 C:\UwAmp\www\foodsecure\core\protected\controllers\PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 C:\UwAmp\www\foodsecure\framework\web\actions\CInlineAction.php(50): PostController->actionIndex()
+#10 C:\UwAmp\www\foodsecure\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\UwAmp\www\foodsecure\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\UwAmp\www\foodsecure\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\UwAmp\www\foodsecure\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\UwAmp\www\foodsecure\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\UwAmp\www\foodsecure\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\UwAmp\www\foodsecure\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\UwAmp\www\foodsecure\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\UwAmp\www\foodsecure\framework\web\CWebApplication.php(276): CController->run('')
+#19 C:\UwAmp\www\foodsecure\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#20 C:\UwAmp\www\foodsecure\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\UwAmp\www\foodsecure\index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/foodsecure/
+---
